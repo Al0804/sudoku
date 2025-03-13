@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1>Selamat Datang di Sudoku Battle!</h1>
+            <div class="instructions">
+                <h2>Instruksi Permainan:</h2>
+                <p>1. Isi angka 1-9 pada kotak kosong</p>
+                <p>2. Setiap baris, kolom, dan kotak 3x3 harus berisi angka 1-9</p>
+                <p>3. Setiap pemain hanya memiliki 1 kesempatan untuk mengisi angka</p>
+                <p>4. Dapatkan 10 poin untuk setiap angka yang benar</p>
+                <div class="color-example">
+                    <div class="color-box zerina-color">Angka Zerina</div>
+                    <div class="color-box bot-color">Angka Bot</div>
+                </div>
+                <div class="game-tips">
+                    <h3>Tips untuk Menang:</h3>
+                    <p>- Perhatikan angka yang sudah ada di sekitar kotak kosong</p>
+                    <p>- Isi angka dengan teliti, karena hanya ada 1 kesempatan</p>
+                    <p>- Fokus pada daerah yang mudah diselesaikan terlebih dahulu</p>
+                </div>
+            </div>
+            <button class="button" onclick="startGame()">Mulai Permainan</button>
+        </div>
+
+        <div id="gameScreen" style="display: none;">
+            <div class="scores">
+                <div class="player-score">Zerina: <span id="playerScore">0</span></div>
+                <div class="bot-score">Bot: <span id="botScore">0</span></div>
+            </div>
+            <div class="status-message" id="statusMessage"></div>
+            <div class="turn-indicator" id="turnIndicator"></div>
+            <div class="sudoku-grid" id="sudokuGrid"></div>
+        </div>
+
+        
+
+        <div id="messageScreen" class="message-screen">
+            <div class="greeting">السلام والليكم حبيبة</div>
+            <div class="content">
+                كيف هو الوضع؟ هل تحسنت من مرض الأمس الذي أصاب حبيبة؟ إجابة على Discord نعم. لا تنس مراجعة الطبيب أيضا ويرجى عدم تجاهل ما تعاني منه. اعتني دائما بصحتك. وأنا آسف أيضا لأنني لم أحصل على وظيفة حتى الآن. لكن صلي دائما من أجل أن أحصل على وظيفة في أقرب وقت ممكن.
+            </div>
+            <div class="signature">أحبك يا حبيبة</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
